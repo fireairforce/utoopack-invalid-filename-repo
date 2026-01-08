@@ -2,15 +2,15 @@
   "private": true,
   "author": "",
   "scripts": {
-    "dev": "umi dev",
-    "build": "COMPRESS=none umi build",
+    "dev": "RUST_LOG=info umi dev",
+    "build": "RUST_LOG=info COMPRESS=none umi build",
     "preview": "umi preview",
     "postinstall": "umi setup",
     "setup": "umi setup",
     "start": "npm run dev"
   },
   "dependencies": {
-    "umi": "^4.6.19"
+    "umi": "^4.6.22"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
