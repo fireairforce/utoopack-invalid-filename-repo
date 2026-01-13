@@ -5,5 +5,8 @@ export default defineConfig({
     { path: "/", component: "index" },
   ],
   npmClient: 'pnpm',
-  utoopack: {}
+  // utoopack: {}
+  mako: {},
+  
+
 });

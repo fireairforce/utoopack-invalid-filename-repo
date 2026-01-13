@@ -2,7 +2,7 @@
   "private": true,
   "author": "",
   "scripts": {
-    "dev": "RUST_LOG=info umi dev",
+    "dev": "umi dev",
     "build": "umi build",
     "preview": "umi preview",
     "postinstall": "umi setup",
@@ -19,7 +19,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@utoo/pack": "1.1.21"
+      "@utoo/pack": "1.1.22"
     }
   }
 }
