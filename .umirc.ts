@@ -5,8 +5,19 @@ export default defineConfig({
     { path: "/", component: "index" },
   ],
   npmClient: 'pnpm',
-  // utoopack: {}
-  mako: {},
-  
-
+  // mako: {}
+  utoopack: {
+    module: {
+      rules: {
+        '*.mp4': {
+          loaders: [
+            {
+              loader: require.resolve('@umijs/bundler-webpack/compiled/url-loader'),
+            }
+          ],
+          as: '*.js'
+        }
+      }
+    }
+  }
 });
